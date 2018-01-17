@@ -8,24 +8,6 @@
 	<img src="screenshots/2018-01-15_20-21-00.png" height="1080" width="1920"/></img>
     <img src="screenshots/3.png" height="1080" width="1920"/></img>
 </div>
-<script>
-(function(){
-        var imgLen = document.getElementById('imgGallary');
-        var images = imgLen.getElementsByTagName('img');
-        var counter = 1;
-
-        if(counter <= images.length){
-            setInterval(function(){
-                images[0].src = images[counter].src;
-                console.log(images[counter].src);
-                counter++;
-
-                if(counter === images.length){
-                    counter = 1;
-                }
-            },4000);
-        }
-})();
-</script>
+<script src="scroll.js"></script>
 </body>
 </html>
